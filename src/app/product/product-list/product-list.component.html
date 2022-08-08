@@ -1,0 +1,30 @@
+
+ <!-- <div class="col-sm-4">
+    <a href="#" class="list-group-item " *ngFor="let product of products">
+      <div class="py-30 px-30">
+        <h4 class="list-group-item-heading" >{{product.title}}</h4>
+        <p class="list-group-item-text" >{{product.category}}</p>
+      </div>
+        <img src="{{product.thumbnail}}" alt="{{product.id}} " class="img-responsive" >
+      
+        <p class="list-group-item-text">{{product.description}}</p>
+      
+
+        <p>   Like    share</p>
+    </a>
+  </div>-->
+
+  <div class="col-sm-4">
+    <a class="list-group-item " *ngFor="let product of products">
+      <table>
+        <tbody>
+            <tr>{{product.title}}</tr>
+            <tr>{{product.category}}</tr>
+            <tr><img src="{{product.thumbnail}}" alt="{{product.id}}" class="img-responsive" ></tr>
+            <tr>{{product.description}}</tr>
+            <tr>like share</tr>
+        </tbody>
+      </table>
+    </a>
+  </div>
+
